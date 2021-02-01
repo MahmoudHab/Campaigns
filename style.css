@@ -406,13 +406,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .velo-slides[data-velo-theme=light] {
   background: #212121;
-  border: 1em solid #c5cac5;
+  border: 1em solid #1C4487;
 }
 .velo-slides[data-velo-theme=light] .velo-slide {
   margin-top: -1em;
 }
 .velo-slides[data-velo-theme=light] .velo-slide__bg {
-  color: #c5cac5;
+  color: #1C4487;
 }
 
 [data-velo-theme=dark] {
