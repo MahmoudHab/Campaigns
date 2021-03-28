@@ -1,0 +1,28 @@
+* {
+  color: #004766;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+button {
+  padding: 8px 20px;
+  background: rgb(255, 8, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  color: white;
+  font-size: 24px;
+}
+
+.yellow-button {
+  background: #F6FF00;
+  color: white;
+  font-size: 24px;
+}
+
+button:hover {
+  background: rgba(255, 8, 0, 0.7);
+  padding: 10px 25px;
+  font-size: 28px;
+}

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+body{
+    overflow-x: hidden;
+}
+h1{
+    margin-left: 10%;
+}
+
+.eligibility{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.eligibility li{
+    margin-left: 4%;
+    padding: .5%;
+    font-size: 110%;
+}
+
+
+iframe{
+    width: 560px;
+    height: 315px;;
+    margin-left: 10%;
+}
+
+.ISL{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;
+    width: auto;
+}
+
+.info-ISL h3{
+    font-size: 130%;
+    color: #104E8B;
+}
+
+.info-ISL p{
+    margin-top: 4%;
+    margin-right: 30%;
+}
+
+.Finxerunt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;
+    width: auto;
+    background-color: #1C86EE;
+}
+
+.info-FINXPol h3{
+    font-size: 130%;
+    color: white;
+}
+
+.info-FINXPol p{
+    margin-top: 4%;
+    margin-right: 20%;
+    color: white;
+}
+
+@media (max-width: 376px) {
+   h1{
+       font-size: 120%;
+   }
+   .eligibility{
+       font-size: 65%;
+   }
+   .ISL{
+       grid-template-columns: 1fr;
+   }
+   .info-ISL{
+       margin-left: 5%;
+       font-size: 80%;
+   }
+   iframe{
+       width: 375px;
+       height: 180px;
+       margin-left: 0%;
+       margin-top: 10%;
+       margin-bottom: 5%;
+   }
+   
+   .Finxerunt {
+       grid-template-columns: 1fr;
+   }
+   
+   .info-FINXPol {
+       font-size: 80%;
+   }
+   
+}
