@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0D506E;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rw-wrapper{
+    width: 80%;
+    position: relative;
+   
+}
+.rw-sentence{
+    margin: 0;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.rw-sentence span{
+    white-space: nowrap;
+    font-size: 200%;
+    font-weight: normal;
+}
+.rw-words{
+    display: inline;
+    text-indent: 10px;
+}
+.rw-words span{
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    color: #ec7d23;
+}
+.rw-words-1 span{
+    animation: rotateWordsFirst 10s linear infinite 0s;
+}
+
+.rw-words span:nth-child(2) {
+    animation-delay: 2s;
+}
+.rw-words span:nth-child(3) {
+    animation-delay: 4s;
+}
+.rw-words span:nth-child(4) {
+    animation-delay: 6s;
+}
+.rw-words span:nth-child(5) {
+    animation-delay: 8s;
+}
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+    25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+
+#wrapper{
+    overflow: hidden;
+}
+.header{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid orange;
+}
+
+.headercontent{
+   align-content: center;
+   justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+.logocontainer{
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+    margin-left: 300px;
+    transform: translateY(-30px);
+}
+.logocontainer img{
+    width: 300px;
+    height: 100%;
+}
+.headertxt{
+    font-size: 25px;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+   body,html{
+       overflow-x: hidden;
+   }
+    .header{
+        width: 100%;
+        margin: 0;
+       
+        
+    }
+    .logocontainer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logocontainer img{
+        width: 100%;
+    }
+    .headertxt{
+        white-space: pre-wrap;
+        margin-top:0;
+        
+        
+    }
+    .headercontent{
+        
+        margin-top: 20px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .rw-wrapper{
+        width: 100%;
+        font-size: 12px;
+        margin-left: 30px;
+    }
+   iframe{
+       width: 350px;
+        height: 230px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+}
+
+
+
+.stats{
+    display: flex;
+    color: #0D506E;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.stat{
+    margin: 90px;
+    text-align: center;
+}
+.stat .toptxt{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+.stat .btmtxt{
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+
+.stitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.stitle p{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    .stats{
+        flex-direction: column;
+    }
+    .stat{
+        margin: 0;
+        margin: 40px;
+    }
+}
+
+.celebrate{
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.celtxt{
+    margin-right: 150px;
+    width: 400px;
+}
+
+.celtxt p{
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+.celtxt span{
+    font-size: 1.4rem;
+    
+  
+}
+@media screen and (max-width: 900px) {
+    .celebrate{
+        flex-direction: column;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .celtxt{
+        margin: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+      width: 100%;
+    }
+
+   
+   
+}
+
+.facultyrow{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    margin-bottom: 60px;
+    max-width: 1200px;
+    min-width: 900px;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.faculty{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+.faculty img{
+    width: 190px;
+    height: 100%;
+    min-width: 190px;
+}
+
+@media screen and (max-width: 900px) {
+    .facultyrow{
+        flex-direction: column;
+        padding:0;
+        margin-left: 100px;
+        
+    }
+
+    .stitle{
+        margin-top: 70px;
+    }
+}
+
+
+
+.weirdrows{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.weirdrows p{
+    color: white;
+    margin-left: 270px;
+    padding: 30px;
+}
+.weirdrows a{
+    text-decoration: none;
+}
+.row1,.row2,.row3,.row4{
+    font-size: 28px;
+}
+.row1{
+    background-color: #0D506E;
+    width: 100vw;
+    
+}
+.row1 p{
+    color: white;
+}
+.row2{
+    background-color: #25627d;
+    width: 100vw;
+    
+}
+.row2 p{
+    color: white;
+}
+.row3{
+    background-color: #3d738b;
+    width: 100vw;
+    
+}
+.row3 p{
+    color: white;
+}
+.row4{
+    background-color: #56859a;
+    width: 100vw;
+    
+}
+.row4 p{
+    color: white;
+}
+
+.row1:hover{
+    background-color: #083042;
+    transition: 0.3s linear;
+}
+
+.row2:hover{
+    background-color: #09384d;
+    transition: 0.3s linear;
+}
+
+.row3:hover{
+    background-color: #0a4058;
+    transition: 0.3s linear;
+}
+
+.row4:hover{
+    background-color: #0c4863;
+    transition: 0.3s linear;
+}
+
+@media screen and (max-width: 900px) {
+    .weirdrows p{
+        margin-left: 0;
+    }
+    .weirdrows{
+        width: 100%;
+    }
+}
+
+
+
+footer{
+   margin-top: auto;
+   width:100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    
+   
+}
+footer a{
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    margin-left: 270px;
+   align-items: center;
+   overflow: hidden;
+}
+.left{
+    font-size: 15px;
+   
+    
+}
+.left p{
+    font-weight: 700;
+}
+
+.right{
+    margin-left: 80px;
+    width: 15%;
+    height: 75%;
+    margin-bottom: 0px;
+}
+.right img{
+    width: 75%;
+    height: 75%;
+}
+
+@media screen and (max-width: 900px) {
+    .content{
+        margin-left: 0;
+        
+    }
+    .right{
+        width: 75%;
+        margin-left:2;
+    }
+
+    .left{
+        font-size: 95%;
+
+    }
+
+}
