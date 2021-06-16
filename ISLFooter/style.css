@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+   
+}
+
+  .footer {
+    flex-shrink: 0;
+    overflow-x: hidden;
+  }
+
+  .tp, .btm{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+     
+      gap: 600px;
+      
+  }
+  .tp{
+
+      background-color: white;
+      color: #234283;
+      font-size: 1.2em;
+      padding: 50px;
+  }
+  .btm{
+    background-color: #152b5a;
+    color: white;
+      padding: 30px;
+      
+  }
+  .topleft{
+     width: 550px;
+    
+  }
+
+  .topright a{
+      font-weight: bold;
+      color: #234283;
+      text-decoration: none;
+      white-space: nowrap;
+  }
+
+  .topright p{
+      padding: 5px;
+  }
+
+  .topright a p:hover{
+      text-decoration: underline;
+      color: #75a5d6;
+  }
+
+  .btmright{
+      display: flex;
+      place-content: center;
+  }
+
+  .btmright a{
+        text-decoration: none;
+       
+        
+  }
+  .btmright a p{
+    font-size: 1.2em;
+    padding: 20px;
+    color: #ffffff;
+
+  }
+
+  .btmright a p:hover{
+      text-decoration: underline;
+      color: #75a5d6;
+
+  }
+  
+
+
+  .btmleft{
+      width: 100%;
+      height: 100%;
+  }
+
+  .btmleft img{
+      width: 100%;
+      height: 100%;
+  }
+
+  @media (max-width: 1300px){
+      .btm{
+          gap: 300px;
+      }
+      .topleft p{
+          width: 300px;
+      }
+
+  }
+
+  @media (max-width:900px){
+      .tp, .btm{
+          gap: 0;
+          flex-direction: column;
+      }
+      
+
+      .topleft{
+          width: 100%;
+          padding:0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+      }
+      .topleft p{
+        margin: 20px;
+        width: 100%;
+      }
+      .btmright{
+          flex-wrap: wrap;
+      }
+
+
+      @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+        .topleft{
+            width: 50%;
+        }
+}
+  }
