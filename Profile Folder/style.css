@@ -1,0 +1,123 @@
+
+/*Start*/
+body{
+    overflow-x:hidden;
+    }
+.wrapper-main{
+    width:65%;
+    display:flex;
+    justify-content:center;
+  
+    margin: 2vmax auto;
+  }
+  .part1, .part2{
+  margin-left:2%;
+  margin-right:2%;
+  width:40%;
+    position:relative;
+  
+  }
+  .cont-info a, .feature a{
+    text-decoration:none;
+    color:black;
+  }
+  .cap{
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-top:20px;
+    padding-bottom:20px;
+   text-underline-offset: 10px;
+  }
+  .istyle{
+    color:#1c4587;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-style:italic;
+    font-size:1.25em;
+  }
+  .part2 .desc{
+    border-bottom: 2px solid #1c4587;
+    padding-bottom:15px;
+  }
+  .contact{
+    font-size:1.25em;
+  }
+  .contact a{
+    color:black;
+    font-weight:300;
+  
+  }
+  a.undl{
+    position:relative;
+  }
+  
+  a.undl:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1c4587;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  a.undl:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .feature,.featured{
+    padding-top:15px;
+  }
+  .feature p{
+    font-size:1.1em;
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+  .feature a{
+    font-weight:100;
+    font-size:1.25em;
+  }
+  .name{
+    margin:0;
+  }
+  .part1{
+    width:365px;
+    margin-right:2rem;
+  }
+  .part2{
+  width: calc(100% - 315px);
+  }
+  .part1 img{
+    height:auto;
+    width:100%;
+  }
+  .seeAll a{
+    color:#1c4587;
+    font-weight:300;
+  text-decoration: none;
+  }
+  .seeAll a:hover{
+    color:#0b2f69;
+  }
+  @media only screen and (max-width: 1024px){
+  .wrapper-main{
+    flex-direction:column;
+    width:85%;
+    margin:auto;
+  }
+  .part1,.part2{
+    width:100%;
+  }
+  .istyle{
+    font-size:1.15em;
+  }
+  .name{
+    padding-top:15px;
+  }
+  .desc{
+    font-size:1em;
+  }
+  }
+  /*End*/
