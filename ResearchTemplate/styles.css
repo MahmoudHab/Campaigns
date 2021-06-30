@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#page-title{
+    width: 80%;
+    margin: 20px 0 20px 4%;
+}
+
+#page-title h1{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 15px 5%;
+}
+
+.title .square{
+    width: 15px;
+    min-width: 15px;
+    height: 15px;
+    border: 1px solid grey;
+    margin: 5px 10px 0 0;
+}
+
+.title .section-content{
+    width: 75%;
+    margin-right: 15px;
+}
+
+.title .article-type{
+    font-size: 17px;
+    color: #968383;
+    font-weight: bold;
+}
+
+.title h1{
+    margin: 5px 0 15px 0;
+    font-size: 25px;
+    color: #191111ed;
+}
+
+.title .article-authors{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.title .article-authors a{
+    color: black;
+}
+
+.title .article-authors a:hover{
+    text-decoration: none;
+}
+
+.title .article-description{
+    margin-bottom: 15px;
+    color: #968d8d;
+    font-weight: 600;
+}
+
+.title button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    background-color: #152B5A;
+    color: white;
+}
+
+.title button a{
+    color: white;
+    text-decoration: none;
+}
+
+.title button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #c51616;
+}
+
+.title button:hover > a{
+    color: #c51616;
+}
+
+#article-links-container{
+    width: 40%;
+    margin: 30px 30px 0 0;
+}
+
+#article-links-container h2{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.article-link{
+    margin-bottom: 25px;
+}
+
+@media(max-width: 700px){
+
+    #page-title{
+        width: 85%;
+        margin: 20px auto 0 auto;
+    }
+
+    #main-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    #article-links-container{
+        width: 85%;
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media(max-width: 400px){
+    .title button{
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        padding: 5px;
+        background-color: #c51616;
+        color: white;
+    }
+}
