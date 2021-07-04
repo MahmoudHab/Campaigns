@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main, main p, main h1, main h2, main a{
+    font-family: 'Noto Serif SC', serif;
+}
+
+#first-section{
+    background-color: #e2e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first-section-left{
+    width: 49%;
+}
+
+#left-inner-container{
+    margin: 170px 40px 170px 70px;
+}
+
+#first-section-left h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+#first-section-left p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#first-section img{
+    width: 50%;
+}
+
+@media (max-width: 800px){
+    #first-section{
+        flex-wrap: wrap;
+    }
+
+    #first-section-left{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #left-inner-container{
+        margin: 50px 0 50px 20px;
+    }
+
+    #first-section img{
+        width: 100%;
+    }
+}
+
+.link-container{
+    width: 90%;
+    margin: 100px auto 30px auto;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+}
+
+.link-inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link{
+    margin: 30px 35px 0 0;
+}
+
+.link h2{
+    margin-bottom: 20px;
+}
+
+.link a{
+    color: black;
+}
+
+.link a:hover{
+    cursor: pointer;
+    color: #ab0909;
+    text-decoration: none;
+}
